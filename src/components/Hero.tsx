@@ -10,7 +10,7 @@ export const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-          find it
+          Welcome
         </h1>
         <p className="text-xl text-white mb-8 max-w-xl">
           Discover unique stays to live, work, or just relax.
