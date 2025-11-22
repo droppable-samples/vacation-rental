@@ -19,13 +19,16 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   return <div className="group cursor-pointer">
       <div className="relative aspect-square overflow-hidden rounded-xl mb-2">
         <img src={imageUrl} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div className="absolute top-3 left-3 bg-[#FF385C] text-white px-2 py-1 rounded-md text-xs font-semibold">
+          Top Pick
+        </div>
         <button className="absolute top-3 right-3 text-white hover:text-[#FF385C]">
           <HeartIcon className="h-6 w-6" />
         </button>
       </div>
       <div>
         <div className="flex justify-between">
-          <h3 className="font-medium text-base text-gray-900 truncate">
+          <h3 className="font-medium text-2xl text-gray-900 truncate">
             {location}
           </h3>
           <div className="flex items-center">
