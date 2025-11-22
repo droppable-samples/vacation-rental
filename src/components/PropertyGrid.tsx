@@ -68,7 +68,7 @@ const properties = [{
 export const PropertyGrid = () => {
   return <div className="py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {properties.map(property => <PropertyCard key={property.id} imageUrl={property.imageUrl} title={property.title} location={property.location} price={property.price} rating={property.rating} dates={property.dates} />)}
+        {properties.map(property => <PropertyCard key={property.id} imageUrl={property.imageUrl} title={property.title} location={property.location} price={property.price} rating={property.rating} dates={property.dates} isTopPick={property.id === 1} />)}
       </div>
     </div>;
 };
