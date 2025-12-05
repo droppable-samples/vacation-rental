@@ -7,7 +7,8 @@ const properties = [{
   location: 'Bali, Indonesia',
   price: 120,
   rating: 4.96,
-  dates: 'Nov 12-17'
+  dates: 'Nov 12-17',
+  isTopPick: true
 }, {
   id: 2,
   imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
@@ -67,8 +68,8 @@ const properties = [{
 }];
 export const PropertyGrid = () => {
   return <div className="py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {properties.map(property => <PropertyCard key={property.id} imageUrl={property.imageUrl} title={property.title} location={property.location} price={property.price} rating={property.rating} dates={property.dates} />)}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        {properties.map(property => <PropertyCard key={property.id} imageUrl={property.imageUrl} title={property.title} location={property.location} price={property.price} rating={property.rating} dates={property.dates} isTopPick={property.isTopPick} />)}
       </div>
     </div>;
 };
