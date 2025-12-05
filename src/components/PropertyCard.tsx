@@ -32,7 +32,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
       </div>
       <div>
         <div className="flex justify-between">
-          <h3 className="font-medium text-lg text-gray-900 truncate">
+          <h3 className="font-bold italic text-lg text-gray-900 truncate">
             {location}
           </h3>
           <div className="flex items-center">
