@@ -9,8 +9,8 @@ export const Hero = () => {
       </div>
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl">
-          Find your place anywhere
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 max-w-4xl">
+          Find Your Perfect Getaway
         </h1>
         <p className="text-xl text-white mb-8 max-w-xl">
           Discover unique stays to live, work, or just relax.
